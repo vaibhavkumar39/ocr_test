@@ -1,0 +1,32 @@
+{
+  "groq": {
+    "scores": {
+      "Accuracy": 1.0,
+      "Completeness": 1.0,
+      "Tables": 1.0,
+      "Structure": 0.7
+    },
+    "reasons": {
+      "Accuracy": "The output accurately transcribes all visible text from the resume image, including the header, career summary, experience details (dates, company names, bullet points), contact information (phone, email, address), education, and skills. All numbers, names, and symbols match the source image exactly with no misreads or omissions.",
+      "Completeness": "The output accurately captures all headings (Career Summary, Experience, Contact, Education, Soft Skills, Hard Skills), bullet points, and specific lines of text visible in the image. It correctly extracts the job titles, dates, and detailed descriptions without omitting any visible content.",
+      "Tables": "The image contains no tables, and the output correctly does not include any tables. All text content is accurately transcribed without converting normal text into table format.",
+      "Structure": "The response faithfully reproduces the document text with correct reading order, clear headings, and clean bullet lists, meeting step 1 and most of step 2. However, the contact section is formatted as a Python‑style dictionary (e.g., {'Phone': ...}) and includes extra braces and quotes, which are unnecessary characters and deviate from a clean plain‑text format. Minor extra blank lines also appear, preventing a perfect score."
+    },
+    "avg": 0.925
+  },
+  "local": {
+    "scores": {
+      "Accuracy": 0.7,
+      "Completeness": 0.7,
+      "Tables": 1.0,
+      "Structure": 0.2
+    },
+    "reasons": {
+      "Accuracy": "The output contains several misreads and garbled text. Specifically, the section headers 'EDUCATION' and 'SOFT SKILLS' are incorrectly transcribed as 'EJ epucation' and 'EJ sort skits'. Additionally, the bullet point symbols are inconsistently transcribed as 'e', '¢', and 'fl)', and the date range separator is misread as a tilde ('~') instead of an en-dash. While most body text is accurate, these specific errors lower the score.",
+      "Completeness": "The output successfully captures the majority of the text content, including the main headings, body paragraphs, and bullet points. However, it contains several OCR errors that distort the text, such as 'EJ epucation' instead of 'EDUCATION', 'EJ sort skits' instead of 'SOFT SKILLS', and 'fl) HARD SKILLS' instead of 'HARD SKILLS'. Additionally, the bullet points are represented by inconsistent and incorrect characters (e.g., 'e', '¢', 'fl)') rather than standard bullet symbols, which reduces the fidelity of the extraction.",
+      "Tables": "The image contains no tables, and the output correctly does not include any tables. The output accurately transcribes the text content of the resume, including sections like Career Summary, Experience, Contact, Education, and Skills, without incorrectly formatting any text as a table.",
+      "Structure": "The response is indeed text extracted from a document, satisfying step 1, but it contains many formatting errors and extraneous characters (e.g., stray \"e\", \"¢\", \"fl)\", misspelled headings like \"EJ epucation\" and \"EJ sort skits\"). Bullet points are not clean and the reading order is disrupted by these garbage characters, violating step 2. Consequently the alignment is poor."
+    },
+    "avg": 0.65
+  }
+}

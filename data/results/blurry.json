@@ -1,0 +1,34 @@
+{
+  "groq": {
+    "scores": {
+      "Accuracy": 1.0,
+      "Completeness": 1.0,
+      "Tables": 1.0,
+      "Structure": 1.0
+    },
+    "reasons": {
+      "Accuracy": "All 5 pages match the image exactly: names, $ amounts, percentages (including -2.3%), email sales.team@example.com, phone +91 98765 43210 and date 14 January 2026.",
+      "Completeness": "Every page has the heading, the paragraph, the full table and the contact line. Nothing is missing.",
+      "Tables": "Each page's table is JSON between [TABLE] and [/TABLE] with the right 4 columns (Region, Manager, Revenue, Growth) and all 4 rows with correct values.",
+      "Structure": "Correct reading order (heading, paragraph, table, contact line), clean paragraphs, no garbage characters."
+    },
+    "avg": 1.0,
+    "judge": "Claude (scored by hand from the page images, same 4 metric steps)"
+  },
+  "local": {
+    "scores": {
+      "Accuracy": 0.95,
+      "Completeness": 1.0,
+      "Tables": 1.0,
+      "Structure": 0.9
+    },
+    "reasons": {
+      "Accuracy": "Everything matches the image except one misread on page 4 (the noisy page): 'oneratina costs' instead of 'operating costs'. All numbers, names, email, phone and date are correct.",
+      "Completeness": "Every page has the heading, the paragraph, the full table and the contact line. Nothing is missing.",
+      "Tables": "Each page's table is JSON between [TABLE] and [/TABLE] with the right 4 columns and all 4 rows with correct values.",
+      "Structure": "Correct reading order and no garbage characters, but paragraphs keep the line breaks from the image, so sentences are split across lines."
+    },
+    "avg": 0.9625,
+    "judge": "Claude (scored by hand from the page images, same 4 metric steps)"
+  }
+}

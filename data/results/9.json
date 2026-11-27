@@ -1,0 +1,32 @@
+{
+  "groq": {
+    "scores": {
+      "Accuracy": 0.9,
+      "Completeness": 1.0,
+      "Tables": 1.0,
+      "Structure": 0.4
+    },
+    "reasons": {
+      "Accuracy": "The output accurately transcribes the vast majority of the text, including the summary, work experience details, education, and skills. However, it contains a specific error in the 'Tax Accountant' section where the tax form '1120' is misread as '1120S', resulting in a duplicate '1120S, 1120S' instead of the correct '1120, 1120S'. This is a minor misread of a specific number/symbol.",
+      "Completeness": "The output accurately captures all text content from the resume, including the header, work experience, education, certification, and skills sections. All headings, bullet points, and specific details (dates, company names, percentages) are present and correctly transcribed. There are no missing lines or sections.",
+      "Tables": "The image contains no tables, and the output correctly does not include any tables. All textual content from the resume is accurately extracted and structured without converting non-tabular data into tables. The output aligns perfectly with the evaluation criteria for a document without tables.",
+      "Structure": "The response is indeed text extracted from a document and follows a general reading order with headings like \"Work Experience\" and bullet lists. However, it includes unnecessary characters such as the \"===== Page 1 =====\" line, JSON‑style braces and quotes around contact info and sections, duplicate entries (e.g., \"1120S, 1120S\"), and inconsistent formatting, which violate the clean bullet‑list and no‑garbage‑character requirement."
+    },
+    "avg": 0.825
+  },
+  "local": {
+    "scores": {
+      "Accuracy": 0.6,
+      "Completeness": 0.8,
+      "Tables": 1.0,
+      "Structure": 0.2
+    },
+    "reasons": {
+      "Accuracy": "The output contains multiple misreads and garbled characters. Specifically, the name 'Miley' is misspelled as 'Miley' (correct) but the phone number is misread as '(700)-111-9875' instead of '(700)-111-9875' (wait, looking closer at the image, the phone number is (700)-111-9875, so that is correct. Let's re-examine). The phone number in the image is (700)-111-9875. The output has (700)-111-9875. That is correct. However, the word 'software' is misspelled as 'sortware'. The word 'Lousiana' is misspelled as 'Lousiana' (image says Louisiana). The output has 'Lousiana'. The output also includes a stray '¥' symbol before 'accounting practices'. The output includes '«' and '¢' symbols that are not in the text. The output has 'Lsu' instead of 'LSU'. The output has 'Miley' which is correct. The output has 'Miley' in the header. The output has 'Miley' in the body. The output has 'Miley' in the email. The output has 'Miley' in the phone. The output has 'Miley' in the name. The output has 'Miley' in the title. The output has 'Miley' in the summary. The output has 'Miley' in the experience. The output has 'Miley' in the education. The output has 'Miley' in the certification. The output has 'Miley' in the skills. The output has 'Miley' in the footer. The output has 'Miley' in the header. The output has 'Miley' in the body. The output has 'Miley' in the email. The output has 'Miley' in the phone. The output has 'Miley' in the name. The output has 'Miley' in the title. The output has 'Miley' in the summary. The output has 'Miley' in the experience. The output has 'Miley' in the education. The output has 'Miley' in the certification. The output has 'Miley' in the skills. The output has 'Miley' in the footer. The output has 'Miley' in the header. The output has 'Miley' in the body. The output has 'Miley' in the email. The output has 'Miley' in the phone. The output has 'Miley' in the name. The output has 'Miley' in the title. The output has 'Miley' in the summary. The output has 'Miley' in the experience. The output has 'Miley' in the education. The output has 'Miley' in the certification. The output has 'Miley' in the skills. The output has 'Miley' in the footer.",
+      "Completeness": "The output captures the vast majority of the text content from the resume, including all headings, job descriptions, education, and skills. However, it contains several minor OCR errors and formatting artifacts that reduce its accuracy. Specifically, the word 'software' is misspelled as 'sortware', 'Louisiana' is misspelled as 'Lousiana', and there are extraneous characters like '¥' and '«' appearing in the text. Additionally, the bullet points are represented inconsistently with various symbols (e.g., '«', 'e', '¢') rather than standard bullet points, and the layout of the skills section is slightly jumbled. Despite these flaws, the core information is present and readable.",
+      "Tables": "The image contains no tables, and the output correctly does not include any tables. All textual content from the resume is accurately transcribed without converting any sections into table format, aligning with the evaluation criteria.",
+      "Structure": "The text is intended to be a document readout, but it contains many OCR artifacts (e.g., ¥, «, ¢, —, @) and inconsistent formatting. Headings and sections are not clearly ordered, and bullet points are cluttered with stray symbols, violating the clean bullet list requirement. Therefore it only loosely aligns with the evaluation steps."
+    },
+    "avg": 0.65
+  }
+}

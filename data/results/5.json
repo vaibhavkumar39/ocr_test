@@ -1,0 +1,32 @@
+{
+  "groq": {
+    "scores": {
+      "Accuracy": 1.0,
+      "Completeness": 1.0,
+      "Tables": 1.0,
+      "Structure": 0.3
+    },
+    "reasons": {
+      "Accuracy": "The output accurately transcribes the text from the provided image, including the name, address, contact details, and the structured table content. All specific details such as dates (June 2009, Nov 2010, 2011, 2008, 2005), qualifications (C.A. - CPT, IPCC), and software skills (Tally 9.0, Tally ERP) match the visual evidence perfectly. There are no misread words, garbled characters, or hallucinated content.",
+      "Completeness": "The output accurately captures all headings, sidebar categories, and bullet points visible in the input image. It correctly extracts the name, contact details, and the content of the 'Curriculum Vitae' table, including all specific qualifications, dates, and skills listed. No visible text elements were omitted.",
+      "Tables": "The output correctly identifies the table structure in the image and represents it as JSON between the required tags. All rows (Career Objective, Professional Qualification, Academic Qualifications, Computer Qualification & Skills, Experience) and their corresponding values are accurately transcribed, including specific dates and details. There are no missing tables or hallucinated content.",
+      "Structure": "The response does present the document text in reading order with headings (e.g., CURRICULUM VITAE) but it includes unnecessary markers such as \"===== Page 1 =====\", \"[TABLE]\" tags, and a JSON‑style array that are not clean bullet lists. These extra characters and formatting deviate from the requirement for clean, garbage‑free output."
+    },
+    "avg": 0.825
+  },
+  "local": {
+    "scores": {
+      "Accuracy": 0.6,
+      "Completeness": 0.7,
+      "Tables": 0.0,
+      "Structure": 0.2
+    },
+    "reasons": {
+      "Accuracy": "The output contains several misreads and garbled text. Specifically, 'E-92™ Floor' is a misread of 'E - 9 2nd Floor', 'MD.ADNAN pene' is a garbled version of 'MD.ADNAN KAUSAR', and 'PRORESSIONSY' is a misread of 'PROFESSIONAL'. Additionally, 'B.R.A.Uniy.' is a misread of 'B.R.A.Univ.', and 'preaparation' is a typo for 'preparation'. These errors reduce the accuracy of the transcription.",
+      "Completeness": "The output captures the majority of the text content, including the header, contact details, and the main body of the resume. However, it contains several specific errors: it misreads '2nd' as '2™', 'Bihar' as 'Bihar)' (with an extra parenthesis), and 'preparation' as 'preaparation'. Additionally, the heading 'PROFESSIONAL QUALIFICATION' is garbled into 'PRORESSIONSY QUALIFICATION'. These errors in headings and specific lines result in a lower score.",
+      "Tables": "The output fails to include any tables in the required JSON format between [TABLE] and [/TABLE] tags. The input image clearly contains a structured table with rows for Career Objective, Professional Qualification, Academic Qualifications, Computer Qualification & Skills, and Experience. The model output presents this information as unstructured text, missing the required table structure entirely.",
+      "Structure": "The output is indeed text extracted from a document, but it contains many OCR errors, stray symbols (e.g., ™, >, m), inconsistent headings, and poorly formatted bullet points. The reading order is roughly preserved, yet the presence of garbage characters and unclean lists shows the response does not meet the clean formatting requirement."
+    },
+    "avg": 0.375
+  }
+}

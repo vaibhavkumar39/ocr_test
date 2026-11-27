@@ -1,0 +1,32 @@
+{
+  "groq": {
+    "scores": {
+      "Accuracy": 1.0,
+      "Completeness": 1.0,
+      "Tables": 1.0,
+      "Structure": 0.6
+    },
+    "reasons": {
+      "Accuracy": "The output accurately transcribes all visible text from the resume image, including the name, contact details, professional summary, and all table contents (Work Experience, Education, and Technical Skills). All names, dates, numbers, and specific terms (e.g., 'FinEdge Technologies', '8.9 / 10 CGPA', 'Optimizely') match the source image perfectly with no misreads or omissions.",
+      "Completeness": "The output accurately captures all visible text from the resume image, including the header, professional summary, and all three tables (Work Experience, Education & Certifications, and Technical Skills Matrix). No headings, bullet points, or lines of text are missing, and the table structures are correctly represented in the JSON format.",
+      "Tables": "The output correctly identifies and extracts all three tables present in the image (Work Experience, Education & Certifications, and Technical Skills Matrix). The JSON structure for each table is properly formatted between the required tags, and the data values (rows and columns) match the visual evidence in the image exactly, including specific details like dates, percentages, and tool names.",
+      "Structure": "The response provides the resume text in a logical reading order with clear headings, satisfying step 1, but it includes raw JSON table markup, [TABLE] tags, and an extra note about a rasterized image, which are unnecessary characters and not clean bullet lists, violating step 2."
+    },
+    "avg": 0.9
+  },
+  "local": {
+    "scores": {
+      "Accuracy": 1.0,
+      "Completeness": 1.0,
+      "Tables": 1.0,
+      "Structure": 0.3
+    },
+    "reasons": {
+      "Accuracy": "The output accurately transcribes all visible text from the resume image, including the name, contact details, professional summary, and the contents of the three tables (Work Experience, Education & Certifications, and Technical Skills Matrix). All names, dates, numbers, and specific phrases match the source image exactly without any misreads or omissions.",
+      "Completeness": "The output accurately captures all visible text from the resume image, including the header, professional summary, and all three tables (Work Experience, Education & Certifications, and Technical Skills Matrix). It correctly identifies all headings, bullet points (represented as table rows), and specific data points such as dates, percentages, and tool names. No headings or lines of text visible in the image are missing from the output.",
+      "Tables": "The output correctly identifies and extracts all three tables present in the image (Work Experience, Education & Certifications, and Technical Skills Matrix). The JSON structure is properly formatted between the required tags, and the data values (rows and columns) match the visual evidence in the image accurately, including specific details like dates, percentages, and tool names.",
+      "Structure": "The response presents the resume text but includes non‑text markup such as [TABLE] tags and JSON arrays, which violates the requirement for clean bullet lists and no unnecessary characters. While headings and reading order are mostly preserved, the extra markup and the line about a rasterized image introduce garbage characters, reducing alignment with the evaluation steps."
+    },
+    "avg": 0.825
+  }
+}

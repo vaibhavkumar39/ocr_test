@@ -1,0 +1,33 @@
+{
+  "groq": {
+    "scores": {
+      "Accuracy": 0.5,
+      "Completeness": 0.8,
+      "Tables": 0.8,
+      "Structure": 0.6
+    },
+    "reasons": {
+      "Accuracy": "Many misreads against the image: 'resume@example.com' (image: resumesample@example.com), 'Syers' (8years), 'Vante Management' (Waste Management), 'Cane New England' (Care New England), 'Analyzed trends' (Analyzed wills), 'accounting procedures' (structures), 'regularly' (proofreading), 'Understood current understanding' (Maintained current understanding), 'Nitha' (Nistha), 'GAAP knowledge' (GAAP expertise). 'Excel/Word' is made up - it is not in the image.",
+      "Completeness": "Almost all headings, skills, jobs and bullets are present, but part of the summary is missing ('...medium-sized corporation. Accounting knowledge and team leadership skills led to achievement of desired outcomes. Motivated accounting professional focused on...') and some bullet endings are cut ('banking reconciliation and disbursements').",
+      "Tables": "The image has no tables and the output has no [TABLE] blocks, but job titles and dates are written as dictionary text like {'Accountant': '06/2017 to 12/2019'}, which is normal text turned into table-like data.",
+      "Structure": "Reading order, headings and bullet lists are clean, but the {'...': '...'} braces and quotes are unnecessary characters, and the company/title lines are swapped for the third job (HBL GLOBAL PVT LTD under the title)."
+    },
+    "avg": 0.675,
+    "judge": "Claude (scored by hand from the page images, same 4 metric steps)"
+  },
+  "local": {
+    "scores": {
+      "Accuracy": 0.9,
+      "Completeness": 0.8,
+      "Tables": 1.0,
+      "Structure": 0.2
+    },
+    "reasons": {
+      "Accuracy": "The output accurately transcribes the vast majority of the resume text, including the header, summary, skills, and education sections. However, it contains a specific misread in the 'Waste Management' experience section where the phrase 'more than $100 million in yearly revenue' is transcribed as 'more than in yearly revenue', omitting the specific monetary value. Additionally, there is a minor typo ('Accoiuntant' instead of 'Accountant'). These errors result in a deduction from the perfect score.",
+      "Completeness": "The output successfully captures the majority of the text from the resume, including the header, summary, skills, experience, and education sections. However, it contains several minor transcription errors (e.g., 'Syears' instead of '5 years', 'Accoiuntant' instead of 'Accountant', 'wills' instead of 'financials') and formatting inconsistencies in the bullet points (using various symbols like ¢, e, ©, * instead of standard bullets). While the content is largely present, these errors and formatting issues prevent a perfect score.",
+      "Tables": "The image contains no tables, and the output correctly represents the content as plain text without generating any tables. The output accurately reflects the structure and content of the resume, including the summary, skills, experience, and education sections, without introducing any formatting errors or hallucinated tables.",
+      "Structure": "The response is indeed a block of text extracted from a document, satisfying step 1, but it fails step 2: headings are present yet the bullet lists are cluttered with stray symbols (¢, ©, ®, *, e) and numerous typographical errors, indicating poor reading order and garbage characters."
+    },
+    "avg": 0.725
+  }
+}

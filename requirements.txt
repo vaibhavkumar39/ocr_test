@@ -1,0 +1,22 @@
+# PDF reading
+pymupdf==2.1
+pypdfium2==5.15.2
+pillow==13.0.0
+numpy==2.5.5
+opencv-python==5.1.0.95
+
+# local OCR (also needs the Tesseract program: sudo apt install tesseract-ocr)
+pytesseract==0.3.13
+rapidocr==3.10.0
+onnxruntime==1.32.0
+rapid_table==3.0.2
+rapid-table-det==1.0.3
+
+# Groq OCR + scoring
+groq==1.7.0
+python-dotenv==1.2.4
+deepeval==4.3.5
+
+# web app
+streamlit==1.67.0
+pandas==3.1.1

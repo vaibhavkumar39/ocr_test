@@ -1,0 +1,40 @@
+===== Page 1 =====
+
+MD.ADNAN
+KAUSAR
+
+C/O :Md. Kamran Kausar,
+E - 9 2nd Floor, Muradi
+Road,
+Batla House, Jamia Nagar,
+New Delhi, 110025
+Mobile: 91-999999999
+E-mail:
+adnankausar19@gmail.com
+
+CURRICULUM VITAE
+
+[TABLE]
+[
+  {
+    "Category": "CAREER OBJECTIVE",
+    "Details": "To pursue a dynamic and challenging career with an organization of repute,and integrating my own goals with the organization's,so as to become a catalyst in each other's growth.\nDuring Articleship I will assumed responsibilities and met deadlines effectively.\nResponsibilities included assisting,coordinating and execution of various assignments."
+  },
+  {
+    "Category": "PROFESSIONAL\nQUALIFICATION",
+    "Details": "C.A. - CPT\nJune, 2009.\nC.A. - IPCC\nNov, 2010."
+  },
+  {
+    "Category": "ACADEMIC\nQUALIFICATIONS",
+    "Details": "B. Com ( B.R.A.Univ. Bihar) 2011\nH.S.C. (CBSE Board) 2008\nS.S.C. (JMI Board,Delhi) 2005"
+  },
+  {
+    "Category": "COMPUTER\nQUALIFICATION\n& SKILLS",
+    "Details": "Completed 100 Hours of (IT) Training Under ICAI\nMS Office\nMS Excel\nInternet operations\nTally 9.0, Tally ERP."
+  },
+  {
+    "Category": "EXPERIENCE",
+    "Details": "3 Years work at Dilip Khetan & Co. as Accountant and related works including various tax calculations, returns filing, preparation of statements of accounts and audit related works."
+  }
+]
+[/TABLE]

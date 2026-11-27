@@ -1,0 +1,69 @@
+===== Page 1 =====
+
+Andrew Williamson
+
+Accountant
+
+{'Address': 'Dayjob.com, Street Birmingham B18'}
+
+{'Phone': '0123 456 7890'}
+
+{'Email': 'info@dayjob.com'}
+
+{'Social': 'Facebook.com/your name'}
+
+PROFILE
+
+A highly organized, detail oriented and dependable professional who has the ability to apply her accounting knowledge and experience to a diverse range of financial issues. Andrew is a hard-working, dedicated and ambitious Accountant who possesses strong theoretical and practical knowledge of generally accepted accounting principles. He has a track record of making a direct impact on operations.
+
+PRO SKILLS
+
+• Ability to effectively present financial data and information to all levels.
+• Knowledge of liquidity and financial risk monitoring procedures and processes.
+• Being accurate under pressure and can remain focused on minute details.
+• Technical knowledge of both national and global accounting principles.
+
+PER SKILLS
+
+• Always the first to volunteer for difficult projects that other staff may shy away from.
+• Not afraid to stand up to wrong doing and if necessary prepared to challenge others.
+• Never giving up on a task half way through and instead always seeing it to the end.
+
+CAREER
+
+{'Role': 'ACCOUNTANT', 'Date': '2015 – Present', 'Company': 'Company name', 'Location': 'Location'}
+
+Involved in working within a financial accounting team and responsible for preparing, examining and analyzing accounting records, financial statements and other financial reports. Reporting to senior managers regarding the company's finances.
+
+• Reporting to managers on the company's finances.
+• Advising on the financial implications of decisions.
+• Detecting & preventing company financial fraud.
+• Liaising with internal and external auditors.
+
+{'Role': 'ACCOUNTANT', 'Date': '2014 – 2015', 'Company': 'Company name', 'Location': 'Location'}
+
+Accurately and promptly processing documentation. Preparing monthly reconciliations of balance sheet accounts. Supporting senior management in specific investigations into departmental management accounts. Dealing with any financial irregularities.
+
+{'Role': 'ACCOUNTANT', 'Date': '2013 – 2014', 'Company': 'Company name', 'Location': 'Location'}
+
+Preparing annual financial statements. Carrying out any other accounting related duties as assigned by the Accounting management. Collecting raw financial data. Conducting regular business reviews.
+
+{'Role': 'ACCOUNTANT', 'Date': '2012 – 2013', 'Company': 'Company name', 'Location': 'Location'}
+
+Developing policy for company treasury. Preparing standard accounting reports and summaries for financial analysis. Supporting team members on accounting issues. Reviewing the company's finances.
+
+ACADEMIC
+
+{'Date': '2006 - 2009', 'Course': 'Course details\nMore details', 'Institution': 'University name'}
+
+{'Date': '2004 - 2006', 'Course': 'Course details\nMore details', 'Institution': 'College name'}
+
+{'Date': '2000 - 2004', 'Course': 'Course details\nMore details\nMaths (A)\nEnglish (B)\nGeography (C)', 'Institution': 'School name'}
+
+REFERENCES
+
+Available on request.
+
+{'Social': 'Twitter.com/name'}
+
+{'Social': 'Linkedin.com/name'}

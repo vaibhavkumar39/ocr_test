@@ -1,0 +1,32 @@
+{
+  "groq": {
+    "scores": {
+      "Accuracy": 0.4,
+      "Completeness": 0.3,
+      "Tables": 1.0,
+      "Structure": 1.0
+    },
+    "reasons": {
+      "Accuracy": "The output only captures the text from 'SECTION 1' and completely omits 'SECTION 2: NATIVE SELECTABLE TEXT' and its associated content (including the Native Reference ID and Extraction Layer details) which are clearly visible in the image. This represents a significant failure to extract all available text.",
+      "Completeness": "The output is missing the main page title 'Hybrid PDF Sample (Image Text + Native Text)' and the subtitle 'Created for OCR, PDF parsing, and text-extraction testing.' Additionally, the entire 'SECTION 2: NATIVE SELECTABLE TEXT' block, including its heading, body text, and the 'Native Reference ID' sidebar, is completely omitted from the output.",
+      "Tables": "The image contains no tables, only text blocks and headers. The output correctly extracts the text without generating any tables, aligning with the evaluation step that awards full score when the image has no tables and the output has none.",
+      "Structure": "The output faithfully presents the text from the document in a clear reading order, includes appropriate headings (e.g., \"SECTION 1: RASTERIZED IMAGE TEXT\"), and contains no extraneous or garbled characters, meeting both evaluation criteria."
+    },
+    "avg": 0.675
+  },
+  "local": {
+    "scores": {
+      "Accuracy": 1.0,
+      "Completeness": 1.0,
+      "Tables": 1.0,
+      "Structure": 0.9
+    },
+    "reasons": {
+      "Accuracy": "The output accurately transcribes all visible text from the image, including the title, section headers, body paragraphs, and specific identifiers like 'INV-2026-8849-HYBRID' and 'DOC-2026-9910-NATIVE'. There are no misread words, garbled characters, or missing details.",
+      "Completeness": "The output accurately captures all visible text from the page image, including the main title, subtitle, and the full content of both 'Section 1' and 'Section 2'. It correctly includes specific details like the OCR Sample Code, Status, Native Reference ID, and Extraction Layer. No headings, sidebars, or lines of text are missing.",
+      "Tables": "The image contains no tables, and the output correctly contains no tables. The text content is accurately extracted and matches the visual evidence in the image, including the specific codes and section headers.",
+      "Structure": "The output faithfully reproduces the document text with correct headings (e.g., SECTION 1, SECTION 2) and maintains proper reading order. There are no bullet lists to assess, and no extraneous or garbage characters appear. Minor formatting quirks such as line breaks within sentences and extra blank lines are present, but they do not significantly detract from the clean, readable transcription."
+    },
+    "avg": 0.975
+  }
+}

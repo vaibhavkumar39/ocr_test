@@ -1,0 +1,32 @@
+{
+  "groq": {
+    "scores": {
+      "Accuracy": 1.0,
+      "Completeness": 0.8,
+      "Tables": 1.0,
+      "Structure": 0.3
+    },
+    "reasons": {
+      "Accuracy": "The output accurately extracts all visible text from the resume image, including the name, contact details (address, phone, email), profile summary, skills, career history with dates and descriptions, academic qualifications, and references. All specific data points such as dates (e.g., '2015 – Present'), phone number ('0123 456 7890'), and email ('info@dayjob.com') match the image perfectly. There are no misread words, garbled characters, or hallucinated content.",
+      "Completeness": "The output successfully captures the majority of the text content, including the profile, career history, and academic sections. However, it contains a specific error in the 'PRO SKILLS' section where the heading is transcribed as 'PRO SKILLS' instead of the correct 'PROFESSIONAL SKILLS' visible in the image. This constitutes a missing/incorrect heading, which lowers the score according to the evaluation steps.",
+      "Tables": "The output correctly identifies that the image contains no tables and does not generate any tables, which aligns with the evaluation criteria. It accurately extracts the text content, including the profile, skills, career history, and academic details, without incorrectly formatting the structured lists (like the career entries) into tables. The content matches the visual evidence in the image.",
+      "Structure": "The response presents the document text with headings and a generally correct reading order, but it includes many unnecessary JSON-like fragments (e.g., {'Address': '...'}), extra quotes and braces, and inconsistent bullet formatting, which violate the clean bullet list and no garbage characters requirement."
+    },
+    "avg": 0.775
+  },
+  "local": {
+    "scores": {
+      "Accuracy": 0.4,
+      "Completeness": 0.5,
+      "Tables": 0.0,
+      "Structure": 0.2
+    },
+    "reasons": {
+      "Accuracy": "The output contains numerous misreads and garbled characters. Specifically, it misreads 'English (B)' as 'English (8)', 'has' as 'haz', 'apply' as 'spply', and 'a' as '2' in multiple instances (e.g., 'Andrew is 2 hard-working', 'He haz 2 track record'). It also fails to capture the 'ACCOUNTANT' job titles and specific dates (e.g., '2015 - Present', '2014 - 2015') associated with the career entries, instead just listing the company details. The structure is also disorganized, placing the 'ACADEMIC' header before the career details.",
+      "Completeness": "The output is missing several key headings and lines present in the image. Specifically, the 'CAREER' heading is omitted, and the job titles 'ACCOUNTANT' along with their corresponding date ranges (e.g., '2015 – Present', '2014 – 2015') are missing from the career section. Additionally, the academic section is missing the specific year ranges (e.g., '2006 - 2009', '2004 - 2006', '2000 - 2004') and the institution names ('University name', 'College name', 'School name'). The output also contains several transcription errors (e.g., 'sccounting', 'haz', 'spply') and formatting issues, but the primary deduction is for the missing structural elements and labels.",
+      "Tables": "The output fails to include any tables in the required JSON format between [TABLE] and [/TABLE] tags. The image contains structured data (Career and Academic sections) that should be represented as tables, but the output presents them as unstructured text. Additionally, the output contains significant OCR errors (e.g., 'sccounting', 'haz', '2' instead of 'a') and misaligns content (e.g., placing job descriptions under the 'ACADEMIC' header).",
+      "Structure": "The output is intended to be plain text from a document, but it contains many OCR errors (e.g., \"sccounting\", \"haz\", \"2 track record\"), inconsistent headings, and stray symbols such as \"=\" and \"*\" that are not cleaned into proper bullet lists. The reading order is disrupted by random line breaks and misplaced sections, violating the requirement for clean headings and bullet formatting."
+    },
+    "avg": 0.275
+  }
+}

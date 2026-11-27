@@ -1,0 +1,32 @@
+{
+  "groq": {
+    "scores": {
+      "Accuracy": 1.0,
+      "Completeness": 1.0,
+      "Tables": 1.0,
+      "Structure": 0.7
+    },
+    "reasons": {
+      "Accuracy": "The output accurately transcribes all visible text from both pages of the resume, including the name, contact details, professional summary, competencies, work experience, projects, education, and certifications. All specific data points such as dates (e.g., Jan 2023 - Present), numbers (e.g., 4.5M+, 99.8%), and proper nouns (e.g., FinEdge Technologies, DTU) match the images perfectly. The structure is well-organized, and no words are misread or omitted.",
+      "Completeness": "The output accurately captures all visible text from both pages, including headings, bullet points, and sidebar information. It correctly structures the 'Core Competencies' section as a table and includes all specific details such as dates, metrics, and contact information without omissions or hallucinations.",
+      "Tables": "The output correctly identifies the 'Core Competencies & Technical Stack' section as a table and formats it as JSON between the required tags. The rows and columns (Category and Skills) accurately reflect the content visible in the image, including all specific skills listed. No other tables are present in the image, and the output does not incorrectly format other text as tables.",
+      "Structure": "The response preserves the document reading order and headings, and uses clean bullet points, but it includes extra markup such as [TABLE] tags and raw JSON, as well as repeated footer lines, which are unnecessary characters and detract from a perfectly clean extraction."
+    },
+    "avg": 0.925
+  },
+  "local": {
+    "scores": {
+      "Accuracy": 1.0,
+      "Completeness": 1.0,
+      "Tables": 1.0,
+      "Structure": 0.4
+    },
+    "reasons": {
+      "Accuracy": "The output accurately transcribes the text from both pages of the resume, including the name, contact details, job titles, dates, and specific metrics (e.g., '4.5M+', '99.8% SLA', '1.2M daily transactions'). The structure is well-preserved, using a table format for the competencies section which matches the visual layout. There are no misread words, garbled characters, or hallucinated content. The bullet points are represented with various symbols (e.g., '@', '«', 'e') which is a minor formatting artifact but does not affect the accuracy of the text content itself.",
+      "Completeness": "The output successfully captures all headings, sidebar information, and bullet points from both pages of the resume. It accurately transcribes the text content, including the professional summary, core competencies (formatted as a table), professional experience, projects, education, and certifications. There are no missing lines or sections, and the structure aligns well with the visual layout of the input images.",
+      "Tables": "The output correctly identifies the 'Core Competencies & Technical Stack' section as a table and formats it as JSON between the required tags. The rows and columns correspond accurately to the visual layout in the image (4 rows, 2 columns). The values in the table match the text in the image, including the specific skills listed for Analytics, Product & Growth, Data Engineering, and Leadership. No other tables are present in the image, and none were incorrectly generated.",
+      "Structure": "The response reproduces the CV text and retains headings and overall reading order, satisfying step 1. However, it contains many extraneous symbols (e.g., «#, e, @) and a raw JSON‑style table block, which are not clean bullet lists and constitute unnecessary garbage characters, violating step 2. Because the document is readable but not properly cleaned, the alignment is low."
+    },
+    "avg": 0.85
+  }
+}

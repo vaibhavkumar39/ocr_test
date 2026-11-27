@@ -1,0 +1,30 @@
+===== Page 1 =====
+
+Hybrid PDF Sample (Image Text + Native Text)
+
+Created for OCR, PDF parsing, and text-extraction testing.
+
+SECTION 1: RASTERIZED IMAGE TEXT
+
+This entire top block is a PNG image embedded in the PDF.
+You cannot highlight or copy this text with a cursor.
+
+OCR Sample Code: INV-2026-8849-HYBRID
+
+Status: Scanned / Non-Selectable Layer
+
+SECTION 2: NATIVE SELECTABLE TEXT
+
+This bottom section is rendered using standard vector fonts inside the PDF. Unlike the
+
+image above, you can highlight, search (Ctrl+F), and copy this text directly without running
+
+OCR.
+
+Native Reference ID: DOC-2026-9910-NATIVE
+
+Extraction Layer: Standard PDF Text Stream
+
+When testing a hybrid PDF parser, an extraction tool without OCR will only detect this
+
+green-bordered section while skipping the blue-bordered image above.

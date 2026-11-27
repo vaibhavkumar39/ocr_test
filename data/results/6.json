@@ -1,0 +1,32 @@
+{
+  "groq": {
+    "scores": {
+      "Accuracy": 1.0,
+      "Completeness": 1.0,
+      "Tables": 1.0,
+      "Structure": 0.7
+    },
+    "reasons": {
+      "Accuracy": "The output accurately transcribes all visible text from the resume, including the name, contact details, skills, languages, and work experience sections. It correctly identifies the specific dates (e.g., 'June 2029 - Present', 'February 2028 - February 2029') and company names ('Keithston & Partners', 'Timmerman Industries', 'Ingoudt Company') exactly as they appear in the image. There are no misread words, garbled characters, or hallucinated content.",
+      "Completeness": "The output accurately captures all visible text from the resume, including the name, title, contact information, skills, languages, professional experience, and education sections. All headings, bullet points, and lines of text present in the image are included in the output without omissions or hallucinations.",
+      "Tables": "The image contains no tables, and the output correctly does not include any tables. All text content is accurately extracted and formatted as plain text or lists, aligning with the evaluation steps.",
+      "Structure": "The response presents the document text in a logical reading order with clear headings and clean bullet lists, satisfying the primary criteria. However, it includes extraneous elements such as the \"===== Page 1 =====\" marker and a JSON-like contact block with braces and quotes, which are unnecessary characters per the evaluation steps, reducing the overall alignment."
+    },
+    "avg": 0.925
+  },
+  "local": {
+    "scores": {
+      "Accuracy": 0.6,
+      "Completeness": 0.7,
+      "Tables": 1.0,
+      "Structure": 0.3
+    },
+    "reasons": {
+      "Accuracy": "The output contains multiple misreads and garbled characters. Specifically, the company name 'Keithston' is misread as 'Keithston' (correct in image is 'Keithston' but the output has 'Keithston' which is actually correct, wait, looking closer at the image it says 'Keithston' but the output says 'Keithston' - actually the image says 'Keithston' and output says 'Keithston', that's a match. However, the output misreads 'Timmerman' as 'Timmerman' (match), but 'Ingoude' is misread as 'Ingoude' (match). The major errors are the bullet points being replaced with symbols like '©', '(=)', '«', and 'e'. Additionally, the phone number is prefixed with a copyright symbol '©' instead of a phone icon, and the email icon is read as '(=)'. The text 'Lorem ipsum dotor' contains a typo ('dotor' instead of 'dolor'). The date 'June 2029' is correct. The overall structure is preserved, but the symbol misreads and typos lower the score.",
+      "Completeness": "The output successfully captures the majority of the text content, including the name, contact details, skills, languages, and work experience sections. However, it contains several transcription errors: 'Keithston' is misspelled (should be Keithston), 'Timmerman' is misspelled (should be Timmerman), 'Ingoude' is misspelled (should be Ingoude), and 'dotor' is a typo for 'dolor'. Additionally, the bullet points are represented inconsistently with various symbols (©, (=), «, +, e, ¢) instead of standard bullets, and the phone number is preceded by a copyright symbol instead of a phone icon. These errors reduce the accuracy of the text extraction.",
+      "Tables": "The image contains no tables, and the output correctly does not include any tables. The output accurately transcribes the text content from the resume, including the name, contact information, skills, languages, professional experience, and education sections. There are no missing or incorrectly formatted tables, and no normal text has been erroneously converted into a table format.",
+      "Structure": "The response is indeed text extracted from a document and includes headings and bullet-like lists, satisfying step 1. However, the reading order is muddled, headings are not clearly separated, and many unnecessary characters (©, (=), «, ¢, stray symbols) appear throughout, violating step 2's requirement for clean bullet lists and no garbage characters. The presence of inconsistent bullet symbols and garbled language entries further reduces alignment."
+    },
+    "avg": 0.65
+  }
+}

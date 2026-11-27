@@ -1,0 +1,10 @@
+===== Page 1 =====
+
+SECTION 1: RASTERIZED IMAGE TEXT
+
+This entire top block is a PNG image embedded in the PDF.
+You cannot highlight or copy this text with a cursor.
+
+OCR Sample Code: INV-2026-8849-HYBRID
+
+Status: Scanned / Non-Selectable Layer

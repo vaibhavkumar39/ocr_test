@@ -1,0 +1,32 @@
+{
+  "groq": {
+    "scores": {
+      "Accuracy": 1.0,
+      "Completeness": 1.0,
+      "Tables": 1.0,
+      "Structure": 0.3
+    },
+    "reasons": {
+      "Accuracy": "The output accurately transcribes the text from the resume image, including the name, contact information, summary, highlights, and detailed work experience. All specific details such as dates (e.g., 'Mar 2008 to Current'), company names (e.g., 'Education Pro', 'Sting Ray Boats'), and percentages (e.g., '30%', '50%') are correctly identified and match the visual evidence. The structure is well-organized, and there are no misread words or hallucinated content.",
+      "Completeness": "The output successfully captures all headings (Summary, Highlights, Experience, Education), bullet points, and specific lines of text visible in the page image. It accurately transcribes the contact information, job titles, dates, and descriptions without omitting any visible content. The use of dictionary structures for job entries is a formatting choice that does not result in missing text.",
+      "Tables": "The image contains no tables, and the output correctly does not include any tables. The output accurately reflects the text content of the resume, including the summary, highlights, experience, and education sections. Since there are no tables in the source image and none in the output, the evaluation criteria for tables are met.",
+      "Structure": "The text is presented as a document with headings (Summary, Highlights, Experience, Education) and bullet points, satisfying the basic reading order. However, the output contains unnecessary characters such as dictionary braces, quotes, commas, and double pipes in the contact line, which violate the requirement for clean bullet lists and no garbage characters."
+    },
+    "avg": 0.825
+  },
+  "local": {
+    "scores": {
+      "Accuracy": 0.6,
+      "Completeness": 0.4,
+      "Tables": 1.0,
+      "Structure": 0.3
+    },
+    "reasons": {
+      "Accuracy": "The output contains several misreads and structural errors. The email address is misspelled as 'exampte-email@example.com' instead of 'example-email@example.com'. The 'Highlights' section is incorrectly merged into the 'Experience' section, and the 'Education' header is misplaced before the job titles. Additionally, the bullet points are garbled with incorrect symbols (e.g., 'e', '©') and missing bullets, and the layout of the 'Highlights' section is jumbled compared to the two-column format in the image.",
+      "Completeness": "The output fails to correctly identify the document structure, placing the 'Highlights' bullet points under the 'Experience' heading instead of their own section. It also contains multiple OCR errors, such as 'exampte-email' instead of 'example-email' and 'e' instead of bullet points, and misses the '2003' date associated with the Education section.",
+      "Tables": "The image contains no tables, and the output correctly does not include any tables. The output accurately transcribes the text content of the resume, including the name, contact information, summary, highlights, experience, and education sections. There are no missing or incorrectly formatted tables, and no normal text has been erroneously converted into a table. The output aligns perfectly with the evaluation steps.",
+      "Structure": "The response is indeed plain text extracted from a document, satisfying step 1, but it contains many formatting problems that violate step 2: stray symbols (e.g., \"| |\", \"©\", \"e\" prefixes), inconsistent bullet markers, duplicated headings, and random garbage characters. The reading order and headings are not cleanly presented, reducing overall alignment."
+    },
+    "avg": 0.575
+  }
+}

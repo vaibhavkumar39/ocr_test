@@ -1,0 +1,32 @@
+{
+  "groq": {
+    "scores": {
+      "Accuracy": 0.6,
+      "Completeness": 0.8,
+      "Tables": 1.0,
+      "Structure": 0.5
+    },
+    "reasons": {
+      "Accuracy": "The output contains multiple misreads and garbled text, particularly in the 'Skills' section where software names are incorrectly transcribed (e.g., 'Oracle/Oracle' instead of 'Oracle/Reconciliation', 'Factual' instead of 'FactSet', 'Fiintech' instead of 'FinTech', 'TellerOne & Tellerx' instead of 'TellerOne & Teller'). Additionally, the bank name in the experience section is misread as 'Bailton Spa National Bank' instead of 'Chase Bank National Bank'. These errors significantly reduce the accuracy of the transcription.",
+      "Completeness": "The output accurately captures the vast majority of the text, including the summary, skills, and detailed bullet points for all three job experiences. However, it fails to correctly transcribe the company name for the 'Mortgage Loan Processor' role, outputting 'Bailton Spa National Bank' instead of the visible 'Checkpoint Capital Bank'. Additionally, the output uses a dictionary format for the experience headers (e.g., `{'08/2018 to Current': 'Accountant – Aledo, TX'}`) which is a structural deviation from the visual layout, though the text content is present. The company name error is a significant factual inaccuracy.",
+      "Tables": "The image contains no tables; the content consists of a resume with sections for Summary, Skills, Experience, and Education. The output correctly extracts this text without generating any tables, adhering to the rule that if the image has no tables and the output has none, full score is given.",
+      "Structure": "The response is indeed a plain‑text extraction of a resume, satisfying step 1. However, step 2 is only partially met: headings and bullet points are present, but the inclusion of dictionary‑style fragments like {'08/2018 to Current': 'Accountant – Aledo, TX'} and similar entries introduces unnecessary characters and disrupts clean reading order. These artifacts prevent the output from being fully tidy and well‑ordered."
+    },
+    "avg": 0.725
+  },
+  "local": {
+    "scores": {
+      "Accuracy": 0.7,
+      "Completeness": 0.9,
+      "Tables": 1.0,
+      "Structure": 0.3
+    },
+    "reasons": {
+      "Accuracy": "The output contains a significant error in the 'Experience' section under 'Accountant'. The text 'Managed over 40 accounts worth over $20' is a misread of the image, which clearly states 'over $5 million'. This is a critical numerical error. Additionally, the output includes a header '===== Page 1 =====' which is not present in the source image, constituting a made-up element. The rest of the text is transcribed accurately.",
+      "Completeness": "The output successfully captures the vast majority of the text content, including all headings, job titles, dates, and the bulk of the bullet points. However, it contains a significant transcription error in the 'Accountant' section, changing 'over $20 million' to 'over $20'. Additionally, it misses the bullet point 'Analyzed loan-to-value ratios...' which appears in the image under the 'Commercial Loan Processor' section (though it is present in the 'Accountant' section, the output seems to have misplaced or duplicated content, but the specific line 'Analyzed loan-to-value ratios...' is present in the output under the Commercial Loan Processor section, so that is actually correct. Re-evaluating: The output includes 'Analyzed loan-to-value ratios...' under Commercial Loan Processor. The main error is the '$20' vs '$20 million'. There are also minor formatting issues with bullet points (using '¢' or '©' instead of standard bullets), but the text is present. The missing text is minimal, mostly just the 'million' part of the dollar amount.",
+      "Tables": "The image contains no tables, and the output correctly represents the content as plain text without generating any tables. The output accurately reflects the structure and content of the resume, including the summary, skills, experience, and education sections.",
+      "Structure": "The text is a document with headings (SUMMARY, SKILLS, EXPERIENCE, EDUCATION AND TRAINING) and generally follows a logical reading order, but the bullet lists contain non‑standard symbols (¢, ©, *, e) and stray characters, violating the clean bullet list requirement and introducing garbage characters."
+    },
+    "avg": 0.725
+  }
+}

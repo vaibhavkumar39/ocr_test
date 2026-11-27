@@ -1,0 +1,87 @@
+===== Page 1 =====
+
+AARAV SHARMA
+
+Senior Product Analyst | Data & Strategy
+
+Noida, UP, India * aarav.sharma@email.com * +91 98765 43210
+
+PROFESSIONAL SUMMARY
+
+Results-driven Product Analyst with 6+ years of experience turning complex datasets into
+actionable growth strategies. Proven track record in SQL, Python, A/B experimentation,
+and cross-functional stakeholder alignment across fintech and SaaS products.
+
+WORK EXPERIENCE
+
+[TABLE]
+[
+  {
+    "Role": "Lead Product Analyst",
+    "Company": "FinEdge Technologies",
+    "Duration": "2023 - Present",
+    "Key Impact": "Boosted onboarding conversion by 18%"
+  },
+  {
+    "Role": "Product Analyst",
+    "Company": "CloudPulse SaaS",
+    "Duration": "2021-2023",
+    "Key Impact": "Reduced churn by 12% via cohort alerts"
+  },
+  {
+    "Role": "Business Analyst",
+    "Company": "MetricWorks India",
+    "Duration": "2019-2021",
+    "Key Impact": "Automated 25+ weekly KPI dashboards"
+  }
+]
+[/TABLE]
+
+EDUCATION & CERTIFICATIONS
+
+[TABLE]
+[
+  {
+    "Degree / Certification": "B.Tech in Computer Science",
+    "Institution": "Delhi Technological University",
+    "Year": "2019",
+    "Grade / Score": "8.9 / 10 CGPA"
+  },
+  {
+    "Degree / Certification": "AWS Certified Data Analytics",
+    "Institution": "Amazon Web Services",
+    "Year": "2022",
+    "Grade / Score": "910 /1000"
+  },
+  {
+    "Degree / Certification": "Google Data Analytics Cert.",
+    "Institution": "Coursera / Google",
+    "Year": "2021",
+    "Grade / Score": "98.5%"
+  }
+]
+[/TABLE]
+
+TECHNICAL SKILLS MATRIX
+
+[TABLE]
+[
+  {
+    "Category": "Data & Querying",
+    "Tools & Technologies": "SQL (PostgreSQL, BigQuery), Python, R",
+    "Proficiency": "Expert"
+  },
+  {
+    "Category": "BI & Visualization",
+    "Tools & Technologies": "Tableau, Power BI, Looker Studio",
+    "Proficiency": "Advanced"
+  },
+  {
+    "Category": "Product & Testing",
+    "Tools & Technologies": "Mixpanel, Amplitude, Optimizely",
+    "Proficiency": "Advanced"
+  }
+]
+[/TABLE]
+
+Full-page rasterized resume image embedded inside PDF.

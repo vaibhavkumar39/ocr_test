@@ -1,0 +1,107 @@
+===== Page 1 =====
+
+AARAV SHARMA
+
+Senior Product & Data Analyst
+
+Noida, UP, India | +91 98100 12345 | aarav.sharma@email.com | linkedin.com/in/aaravsharma
+
+PROFESSIONAL SUMMARY
+
+Results-driven Senior Product & Data Analyst with 7+ years of experience translating complex datasets into actionable product strategies, revenue growth, and operational efficiency across fintech and SaaS platforms. Proven track record of building automated BI pipelines, leading A/B experimentation frameworks, and partnering with cross-functional engineering and leadership teams.
+
+CORE COMPETENCIES & TECHNICAL STACK
+
+[TABLE]
+[
+  {
+    "Category": "Analytics & BI:",
+    "Skills": "SQL, Python (Pandas, NumPy), Tableau, Power BI, Looker, Excel Modeling"
+  },
+  {
+    "Category": "Product & Growth:",
+    "Skills": "A/B Testing, Funnel Optimization, Cohort Retention, User Segmentation, KPI Design"
+  },
+  {
+    "Category": "Data Engineering:",
+    "Skills": "Snowflake, BigQuery, Airflow, dbt, ETL Pipelines, Data Warehousing"
+  },
+  {
+    "Category": "Leadership:",
+    "Skills": "Stakeholder Management, Product Roadmapping, Agile/Scrum, Executive Reporting"
+  }
+]
+[/TABLE]
+
+PROFESSIONAL EXPERIENCE
+
+Lead Product Analyst — FinEdge Technologies
+
+Jan 2023 - Present | Noida
+
+• Spearheaded end-to-end product analytics for a mobile payments platform serving 4.5M+ monthly active users.
+• Designed and evaluated 35+ controlled A/B experiments, lifting onboarding completion by 18% and reducing churn by 11%.
+• Built executive self-serve dashboards in Power BI and Snowflake, cutting weekly reporting turnaround time by 75%.
+• Partnered with product managers to define north-star metrics and prioritize high-ROI roadmap features.
+
+Senior Data Analyst — CloudScale SaaS Pvt. Ltd.
+
+Jun 2020 - Dec 2022 | Gurugram
+
+• Developed customer health scoring and predictive churn models in Python, enabling proactive retention outreach worth $1.4M ARR.
+• Automated daily ETL workflows using SQL and Airflow, improving data pipeline reliability to 99.8% SLA compliance.
+• Conducted deep-dive pricing and feature adoption studies that guided a tiered subscription relaunch.
+
+Aarav Sharma — Curriculum Vitae (Raster Image Page)
+
+Page 1 of 2
+
+
+===== Page 2 =====
+
+AARAV SHARMA | Senior Product & Data Analyst
+
+aarav.sharma@email.com
+
+PROFESSIONAL EXPERIENCE (CONTINUED)
+
+Business & Operations Analyst — NexGen Retail Corp.
+
+Jul 2018 – May 2020 | Bengaluru
+
+• Analyzed omnichannel sales and inventory turnover across 120+ retail stores to optimize regional stock allocation.
+• Created automated Tableau scorecards tracking gross margin, fulfillment speed, and promotional ROI.
+• Collaborated with supply chain teams to reduce stockout incidents by 14% during peak seasonal campaigns.
+
+SELECTED STRATEGIC PROJECTS
+
+Real-Time Fraud & Anomaly Alerting System
+
+Engineered SQL and Python rule-based anomaly detection pipelines monitoring 1.2M daily transactions, reducing false positives by 22%.
+
+Self-Serve Experimentation Calculator & Portal
+
+Built an internal statistical power and sample-size evaluation toolkit adopted by 18 product squads across the organization.
+
+Customer Lifetime Value (LTV) Segmentation Framework
+
+Segmented B2B enterprise accounts by usage velocity and expansion propensity, increasing upsell conversion by 16%.
+
+EDUCATION
+
+Bachelor of Technology (B.Tech) in Computer Science & Engineering
+
+2014 – 2018
+
+Delhi Technological University (DTU), New Delhi | CGPA: 8.7 / 10.0
+
+CERTIFICATIONS & ACHIEVEMENTS
+
+• Microsoft Certified: Power BI Data Analyst Associate (PL-300)
+• Snowflake SnowPro Core Certified — Cloud Data Warehousing & Architecture
+• Winner — Annual FinEdge Data Innovation Hackathon (Automated Retention Engine, 2024)
+• Published internal playbook on Bayesian vs. Frequentist A/B Testing for Product Managers
+
+Aarav Sharma — Curriculum Vitae (Raster Image Page)
+
+Page 2 of 2

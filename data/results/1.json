@@ -1,0 +1,32 @@
+{
+  "groq": {
+    "scores": {
+      "Accuracy": 1.0,
+      "Completeness": 0.8,
+      "Tables": 1.0,
+      "Structure": 0.8
+    },
+    "reasons": {
+      "Accuracy": "The output accurately transcribes all visible text from the resume image, including the name, contact details (address, phone, email), summary, skills, education, and professional experience. All specific details such as dates (June 2011, Sept. 2012), company names (Altria Corporate Services), and technical terms (JD Edwards, Yardi Voyager) are correctly identified without misreads or omissions.",
+      "Completeness": "The output accurately captures all headings (Summary, Skills, Education, Professional Experience), contact information, and the majority of the body text. However, it fails to transcribe the bullet points under the 'Senior Accountant' section that correspond to the first six items listed in the 'Skills' section (e.g., 'Extensive monthly/year-end close process', 'SEC reporting', etc.). These lines are clearly visible in the image but are missing from the output, resulting in a deduction.",
+      "Tables": "The image contains a resume document which does not include any tables. The output correctly represents the content as text without generating any tables. According to the evaluation steps, if the image has no tables and the output has none, the full score should be given.",
+      "Structure": "The response faithfully reproduces the document text with proper reading order and clear headings. Bullet points are cleanly formatted using • and there are no obvious garbage characters. The only minor issue is the inclusion of the \"===== Page 1 =====\" marker, which may be considered unnecessary metadata rather than part of the core content."
+    },
+    "avg": 0.9
+  },
+  "local": {
+    "scores": {
+      "Accuracy": 0.3,
+      "Completeness": 0.7,
+      "Tables": 1.0,
+      "Structure": 0.2
+    },
+    "reasons": {
+      "Accuracy": "The output contains numerous misreads and garbled text. Key errors include: 'G RO GAN ) JR' instead of 'GROGAN, JR'; 'LaneySackson' instead of 'Lane, Jackson'; 'Britty ¢ sumesbot,com' instead of 'Britty@resumesbot.com'; 'Peachuee' instead of 'Peachtree'; '8.B.A' instead of 'B.B.A'; and 'JOE module' instead of 'JDE module'. The URL at the bottom is also significantly garbled ('hitps://resumesbot.com/: examples/'). These errors violate the requirement to accurately compare words, names, and symbols.",
+      "Completeness": "The output captures the majority of the text content, including the summary, skills, education, and professional experience sections. However, it contains several OCR errors and formatting issues: the name 'GROGAN' is split with a space ('G RO GAN'), the address 'Jackson' is misspelled as 'LaneySackson', the email address is garbled ('sumesbot,com'), and the URL at the bottom is incomplete and misspelled. Additionally, the 'ResumesBot' logo text is missing. These errors and omissions lower the score.",
+      "Tables": "The image contains no tables, and the output correctly does not include any tables. The output accurately transcribes the text content of the resume, including the name, contact information, summary, skills, education, and professional experience. There are no missing or incorrect tables, and no normal text has been incorrectly formatted as a table.",
+      "Structure": "The text is a raw document readout but contains many garbled characters, mis‑ordered headings, and broken bullet points (e.g., \"RAYMOND G RO GAN ) JR e 4471 Gorby LaneySackson, MS\", \"Email: Britty ¢ sumesbot,com\", \"ckout more Accounting...\", \"hitps://resumesbot.com/\"), violating the clean bullet list and no‑garbage‑character requirement."
+    },
+    "avg": 0.55
+  }
+}

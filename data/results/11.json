@@ -1,0 +1,32 @@
+{
+  "groq": {
+    "scores": {
+      "Accuracy": 1.0,
+      "Completeness": 1.0,
+      "Tables": 1.0,
+      "Structure": 0.2
+    },
+    "reasons": {
+      "Accuracy": "The output accurately transcribes all visible text from the resume, including the name, contact information (phone, email, social media links), job titles, dates, and specific details like percentages (98%, 90%, 99.9%) and company names (Jandreau Brothers, Muller Construction). There are no misread words, garbled characters, or hallucinated content. The structure follows the visual layout logically.",
+      "Completeness": "The output accurately captures all text content from the page image, including the main body sections (Experience, Education, Additional Activities, Licensing, Courses) and the sidebar (Personal Info, Soft Skills, Hard Skills). All headings, bullet points, and specific details (dates, job titles, skill levels) are present and correctly transcribed. There are no missing lines or sections.",
+      "Tables": "The image does not contain any tables; it consists of a resume layout with text sections and skill bars. The output correctly identifies that there are no tables and does not generate any JSON table structures between [TABLE] and [/TABLE] tags. It accurately extracts the text content without hallucinating table structures.",
+      "Structure": "The response is meant to be plain text from a document, but it includes many unnecessary characters such as curly braces, quotes, and dictionary‑style syntax (e.g., {'2016-08 - 2017-09': 'Construction Superintendent\\nJandreau Brothers Construction'}). These break the clean bullet‑list requirement and introduce garbage characters, violating step 2 despite preserving a reasonable reading order. Consequently, alignment with the evaluation steps is very low."
+    },
+    "avg": 0.8
+  },
+  "local": {
+    "scores": {
+      "Accuracy": 0.8,
+      "Completeness": 0.7,
+      "Tables": 1.0,
+      "Structure": 0.2
+    },
+    "reasons": {
+      "Accuracy": "The output accurately captures the vast majority of the text, including all names, dates, job titles, and specific details like the phone number and email address. However, it fails to transcribe the name 'William Martinez' at the top of the resume, which is a prominent feature of the image. Additionally, the skill bars in the 'Soft Skills' and 'Hard Skills' sections are represented by garbled characters (e.g., 'SSS Ss', 'EEE eee eee eee') rather than being omitted or described, which counts as misread/garbled content.",
+      "Completeness": "The output successfully captures the main body text, including the summary, experience details, education, and sidebar information. However, it fails to include the candidate's name ('William Martinez') which is a prominent heading in the image. Additionally, the output contains significant OCR artifacts (e.g., 'SSS Ss', 'EEE eee eee eee') where the skill progress bars should be, which are not present in the source image and represent a hallucination of content. The missing name is a critical omission of a heading.",
+      "Tables": "The image does not contain any tables; it consists of a resume layout with text sections and skill bars. The output correctly identifies that there are no tables and does not include any [TABLE] tags. It accurately extracts the text content from the image without converting non-table data into tables.",
+      "Structure": "The text is indeed a raw document readout, but it contains many extraneous characters (e.g., \"SSS Ss\", \"EEE eee eee eee\", \"L——_—_ _S EERE ES\") and inconsistent formatting that break clean headings and bullet lists, violating the requirement for no unnecessary or garbage characters."
+    },
+    "avg": 0.675
+  }
+}

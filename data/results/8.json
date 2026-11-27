@@ -1,0 +1,32 @@
+{
+  "groq": {
+    "scores": {
+      "Accuracy": 1.0,
+      "Completeness": 1.0,
+      "Tables": 1.0,
+      "Structure": 1.0
+    },
+    "reasons": {
+      "Accuracy": "The output accurately transcribes all visible text from the resume image, including the name, contact details (address, phone, email), skills, employment history with correct dates and bullet points, education, and references. All names, numbers, and symbols match the source image exactly without any misreads or omissions.",
+      "Completeness": "The output accurately captures all text content from the provided resume image, including the sidebar details (name, title, contact info, skills) and the main body sections (profile, employment history, education, internships, and references). All headings, bullet points, and specific lines of text are present and correctly transcribed without omissions.",
+      "Tables": "The image contains a resume formatted with sections and lists, but it does not contain any tables (grid structures with rows and columns). The output correctly represents the content as text and lists without creating any tables. Since there are no tables in the image and none in the output, the condition for a full score is met.",
+      "Structure": "The response faithfully reproduces the document text in a logical reading order with clear headings (e.g., Details, Skills, Profile, Employment History) and clean bullet lists using standard bullet characters. No extraneous or garbled characters are present, meeting both evaluation steps."
+    },
+    "avg": 1.0
+  },
+  "local": {
+    "scores": {
+      "Accuracy": 0.4,
+      "Completeness": 0.7,
+      "Tables": 1.0,
+      "Structure": 0.2
+    },
+    "reasons": {
+      "Accuracy": "The output contains numerous OCR errors and garbled text. Key details are misread: the email address is corrupted ('H inesaccnt3@emaiicom' instead of 'H.jinesacct3@gmail.com'), the job title 'SENIOR' is read as 'StNIOR', and the skills list contains nonsensical characters ('os', 'a', 'diesen $<)', 'pclae cee'). Additionally, the reference email 'mendet_jer99@vesselcom' is missing the dot before 'com'. These errors significantly reduce the accuracy of the transcription.",
+      "Completeness": "The output captures the majority of the text content from the resume, including the profile, employment history, education, and references. However, it contains several OCR errors (e.g., 'StNIOR' instead of 'SENIOR', 'praviding' instead of 'providing', 'tedger' instead of 'ledger'). More significantly, it fails to capture the dates associated with the employment history, education, and internship sections (e.g., 'JUNE 2018 - APRIL 2021', 'SEPTEMBER 2015 - MAY 2018'), which are clearly visible in the image. According to the evaluation steps, missing lines of text result in a lower score.",
+      "Tables": "The image contains no tables, and the output correctly does not include any tables. The output accurately transcribes the text content of the resume, including profile, employment history, education, and references, without converting any text into table format. This aligns with the evaluation steps.",
+      "Structure": "The output is intended to be plain text from a document, but it contains many OCR errors, random symbols (e.g., \"~s\", \"StNIOR\", \"H inesaccnt3@emaiicom\"), stray characters like \"a\" and \"os\", and malformed bullet points using © and * symbols. These garbage characters violate the requirement for clean bullet lists and no unnecessary characters, indicating poor adherence to the evaluation steps."
+    },
+    "avg": 0.575
+  }
+}
