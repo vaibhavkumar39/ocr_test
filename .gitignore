@@ -1,0 +1,20 @@
+# secrets (Groq API keys)
+.env
+.env.*
+.streamlit/secrets.toml
+
+# python
+__pycache__/
+*.pyc
+venv/
+.venv/
+lvenv/
+
+
+# caches
+.deepeval/
+
+# editor / system files
+.vscode/
+.idea/
+.DS_Store
